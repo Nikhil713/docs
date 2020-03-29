@@ -11,11 +11,13 @@ redirect_from:
 
 ## How to apply
 
+### IMPORTANT: Proposal submission deadline is March 31st, 2020.  Register and submit your proposal now at [GSoC Dashboard](https://summerofcode.withgoogle.com/dashboard/).
+
 Rocket.Chat is proud to be an official mentor organization for Google Summer of Code 2020!
 
 Students interested in joining us this summer shoud check out our [list of project ideas](#project-ideas) and start discussion with mentors about their project immediately.  See the section [About GSoC 2020](#about-gsoc-2020) for more information.
 
-Official application for the GSoC 2020 season opens on March 16, 2020.   Please see [GSoC timeline](#timeline) for more details.
+Application is **now open**.  Students should register and submit their proposals via their [GSoC Dashboard](https://summerofcode.withgoogle.com/dashboard/).   All proposals must be finalized by March 31st.   Please see [GSoC timeline](#timeline) for more details.
 
 ### About GSoC 2020
 
@@ -37,15 +39,27 @@ Interested students are also encouraged to interact with our contributor communi
 
 <https://github.com/RocketChat/Rocket.Chat>
 
-Enthusiasm and interest are extremely high this year; over 25 candidate students have already started to interact with our community and contributing to the repositories!  Together, they have already contributed over 100 issues and over 18 merged PRs to our various projects.  We are maintaining a real-time updated leaderboard for at-a-glance student (candidates) contribution here:
+### Update March 29th, 2020
+
+Enthusiasm and interest from students are all time high this year; over 112 candidate students have already started to interact with our community and contributing to the repositories!  Together, they have already contributed over 100 issues and over 50 merged PRs to our various projects.  We are maintaining a real-time updated leaderboard for at-a-glance student (candidates) contribution here:
 
 <https://gsoc.rocket.chat/>
 
-The leaderboard project **itself** is open source, created and maintained by our student (candidates).  All potential GSoC organizations are welcome to use and deploy it (the project has a super friendly MIT license - just like Rocket.Chat).
+The leaderboard project **itself** is open source, created and maintained by our former GSoC student (now mentor and team member).  All potential GSoC organizations are welcome to use and deploy it (the project has a super friendly MIT license - just like Rocket.Chat).
 
 <https://github.com/lolimay/GSoC-Contribution-Leaderboard-Node>
 
+We have recnetly arranged for the TOP 8 student contributors to meet one on one with Rocket.Chat's project lead Gabriel Engel and great remote fun was had by all.
+
+Mentoring interest from core team has been reduced this year, while community mentor participation is at an all time high.  Proposals for projects are streaming steadily in since application open, the volume of incoming proposals is reduced compared to prior year - but the percentage of high quality propsals has increased.
+
 ## Project Ideas
+
+### Advanced Rocket.Chat administrators and operations toolkit
+
+- **Mentors**: [@diego.sampaio](https://open.rocket.chat/direct/diego.sampaio), [@sing.li](https://open.rocket.chat/direct/sing.li)
+- **Description**: Administration and management of a Rocket.Chat server is a very complex task, especially for servers that are utilized by thousdands of users on a daily basis.  There exists many administrative and operational activities that require access to the system in ways that are not currently supported by our Administrative dashboard.  This project creates small, standalone tools, to address this need. These tools will be immediately useful for anyone operating one-or-more large Rocket.Chat server(s) worldwide.
+- **Desirable Skills**: Familiarity with nodeJS fullstack webapp development. Experience with ReactJS or Vue.js ideal.  Must have database skills, ideally MongoDB.
 
 ### Improve Documentation Framework (Versioning)
 
@@ -96,9 +110,11 @@ The leaderboard project **itself** is open source, created and maintained by our
 - **Project repository**: <https://github.com/RocketChat/Rocket.Chat.Houston>
 - **Description**: Huston is the CLI tooling we use to release new versions of Rocket.Chat and to generate our change logs from merged pull requests. We want to:
     * Rewrite the tooling in TypeScript;
-    * Improve the changelog generation getting more information from the PRs like description, images, etc;
-    * Accept a new format of PR titles;
+    * ~Improve the changelog generation getting more information from the PRs like description, images, etc;~ (already done)
+    * Accept a new format of PR titles (conventional changelog);
     * Add a validation system for PRs titles via GitHub Actions;
+    * Add a tooling to preview the generated changelog for the PR
+    * Add new top level of separation for product type (like Enterprise and Community) based on labels
 
 ### Alexa Skill(s) Improvement
 
@@ -207,7 +223,7 @@ The leaderboard project **itself** is open source, created and maintained by our
 
 ### Rocket.Chat Mobile site
 
-- **Mentors**: @kb0304, @jaytat0
+- **Mentors**: @karan.bedi
 - **Description**: A client build for mobile-web, lite in size and functionality to bring down the site load time, with a better UI/UX customized for mobile screens.
 - **Desirable Skills**: Familiarity with Rocket.Chat and Responsive Design
 
